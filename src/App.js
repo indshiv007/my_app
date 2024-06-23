@@ -5,7 +5,7 @@ import SearchIcon from "./search.svg";
 
 // api key - 949f86d2
 
-const API_URL = "http://www.omdbapi.com?apikey=949f86d2";
+const API_URL = "https://www.omdbapi.com?apikey=949f86d2";
 // const movie1 = {
 //   Title: "Batman v Superman: Dawn of Justice (Ultimate Edition)",
 //   Year: "2016",
