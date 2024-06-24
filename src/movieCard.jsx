@@ -1,27 +1,25 @@
-//why jsx extension
-//whenever creating any new react component jsx extension is 
-
 import React from "react";
 
-const MovieCard = ({ movie }) => {//here we need to use props 
-    // but instead of doing props.xyz everywhere we use 
-    // object destructuring as { movie } in place of props (parameter of the fun)
-    return (
-        <div className="movie">
-            <div>
-                <p>{movie.Year}</p>
-            </div>
+const MovieCard = ({ movie }) => {
+  return (
+    <div className="movie">
+      <div>
+        <p>{movie.year}</p>
+      </div>
 
-            <div>
-                <img src={movie.Poster !== 'N/A' ? movie.Poster : 'https://via.placeholder.com/400'} alt={movie.Title} />
-            </div>
+      <div>
+        <img
+          src={movie.poster !== 'N/A' ? movie.poster : 'https://via.placeholder.com/400'}
+          alt={movie.title}
+        />
+      </div>
 
-            <div>
-                <span>{movie.Type}</span>
-                <h3>{movie.Title}</h3>
-            </div>
-        </div>
-    )
-}
+      <div>
+        <h3>{movie.title}</h3>
+        <p>{movie.type}</p>
+      </div>
+    </div>
+  );
+};
 
 export default MovieCard;
